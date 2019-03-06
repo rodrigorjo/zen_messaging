@@ -16,7 +16,12 @@ public class Tut1Config {
 
     @Bean
     public Tut1Receiver receiver() {
-        return new Tut1Receiver();
+        return new Tut1Receiver("First Receiver");
+    }
+
+    @Bean
+    public Tut1Receiver receiver2() {
+        return new Tut1Receiver("Second Receiver");
     }
 
 
